@@ -4,13 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>JoloCola</title>
+    <script src="https://unpkg.com/scrollreveal"></script>
     <link rel="stylesheet" href="/styles/style.css">
     <link  rel="stylesheet"  href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
 </head>
 <body>
     
-    <header class="header-container">
-        <section>
+    <header>
+        <section class="header-container">
             <div class="header-bartop">   
     
                 <div class="header-nav-contact">
@@ -52,8 +53,8 @@
         <section>
             <div class="navigation-container">
                 <nav class="nav-bar-menu">
-                    <img class="img-logo" src="./assests/logojolo.png" alt="JoloCola logo">
-            
+                    <a href=""><img class="img-logo" src="./assests/logojolo.png" alt="JoloCola logo"></a>
+                    <button class="hamburger"></button>
                     <ul class="nav-content">
             
                         <li><a href="">Home</a></li>
@@ -71,7 +72,7 @@
     </header>  
 
     <main>
-        <section class="home-container">
+        <section class="home-container hidden">
         
             <div class="home-apresetation">
                 <h2>JoloCola</h2>
@@ -89,7 +90,7 @@
     
         </section>
     
-        <section class="we-help-you">
+        <section class="we-help-you youVisible">
             
             <div class="help-section">
                 <div class="text-sectio-help">
@@ -141,46 +142,49 @@
                     <img class="operario-help" src="./assests/constructionImage.png" alt="engenheiros analisando a contrução">
     
                 </div>
-    
+            </div>
+        </section>
+
+        <section class="cards">
                 <div class="cards-help">
-                    <div class="card 1" id="card1">
-                        <img src="https://static.hillarys.co.uk/asset/media/23685/hil-vert2019-swatch-acacia-light-grey.jpg?mode=crop&mcb=5f884e47a7424cfe86340315ccaafed0" alt="">
-                        <div class="text-card">
-                            <h1>Construction</h1>
-                            <div class="bar"></div>
-                            <h2>constructing constructing constructing</h2>
-                        </div>
+                    <div class="card-scroll card 1" id="card1"> <!-- Adicionado .card-scroll -->
+                      <img src="https://static.hillarys.co.uk/asset/media/23685/hil-vert2019-swatch-acacia-light-grey.jpg?mode=crop&mcb=5f884e47a7424cfe86340315ccaafed0" alt="">
+                      <div class="text-card">
+                        <h1>Construction</h1>
+                        <div class="bar"></div>
+                        <h2>constructing constructing constructing</h2>
+                      </div>
                     </div>
                     <!--_____________________________________________________ -->
-                    <div class="card 2">
-                        <img src="https://static.hillarys.co.uk/asset/media/23685/hil-vert2019-swatch-acacia-light-grey.jpg?mode=crop&mcb=5f884e47a7424cfe86340315ccaafed0" alt="funbdo cinza">
-                        <div class="text-card">
-                            <h1>Construction</h1>
-                            <div class="bar"></div>
-                            <h2>constructing constructing constructing</h2>
-                        </div>
+                    <div class="card-scroll card 2"> <!-- Adicionado .card-scroll -->
+                      <img src="https://static.hillarys.co.uk/asset/media/23685/hil-vert2019-swatch-acacia-light-grey.jpg?mode=crop&mcb=5f884e47a7424cfe86340315ccaafed0" alt="funbdo cinza">
+                      <div class="text-card">
+                        <h1>Construction</h1>
+                        <div class="bar"></div>
+                        <h2>constructing constructing constructing</h2>
+                      </div>
                     </div>
                     <!--_____________________________________________________ -->
-                    <div class="card 3">
-                        <img src="https://static.hillarys.co.uk/asset/media/23685/hil-vert2019-swatch-acacia-light-grey.jpg?mode=crop&mcb=5f884e47a7424cfe86340315ccaafed0" alt="">
-                        <div class="text-card">
-                            <h1>Construction</h1>
-                            <div class="bar"></div>
-                            <h2>constructing constructing constructing</h2>
-                        </div>
+                    <div class="card-scroll card 3"> <!-- Adicionado .card-scroll -->
+                      <img src="https://static.hillarys.co.uk/asset/media/23685/hil-vert2019-swatch-acacia-light-grey.jpg?mode=crop&mcb=5f884e47a7424cfe86340315ccaafed0" alt="">
+                      <div class="text-card">
+                        <h1>Construction</h1>
+                        <div class="bar"></div>
+                        <h2>constructing constructing constructing</h2>
+                      </div>
                     </div>
-                </div>
+                  </div>
             </div>
     
         </section>
     
         <section class="why-choose-us">
     
-            <h3 class="sub-title">Why Choose Us</h3>
-            <h1 class="first-title">Our Promise and values</h1>
+            <h3 class="sub-title txt-prin">Why Choose Us</h3>
+            <h1 class="first-title sub-txt">Our Promise and values</h1>
     
             <div class="cards-choose">
-                <div class="card-choose-1">
+                <div class="card-choose-1 card-choose">
                     <div class="img-sqn"></div>
                     <div class="text-choose">
                         <h1>Work Strategy</h1>
@@ -188,7 +192,7 @@
                     </div>
                 </div>
     
-                <div class="card-choose-1">
+                <div class="card-choose-1 card-choosee">
                     <div class="img-sqn"></div>
                     <div class="text-choose">
                         <h1>Specialist Engineers</h1>
@@ -196,7 +200,7 @@
                     </div>
                 </div>
     
-                <div class="card-choose-1">
+                <div class="card-choose-1 card-choose">
                     <div class="img-sqn"></div>
                     <div class="text-choose">
                         <h1>Best Quality</h1>
@@ -204,7 +208,7 @@
                     </div>
                 </div>
     
-                <div class="card-choose-1">
+                <div class="card-choose-1 card-choosee">
                     <div class="img-sqn"></div>
                     <div class="text-choose">
                         <h1>Skilled Workers</h1>
@@ -216,11 +220,11 @@
     
         <section class="our-services">
     
-            <h3 class="sub-title">Our Services</h3>
-            <h1 class="first-title" id="title-services">we offer our clients</h1>
+            <h3 class="sub-title sub-txt">Our Services</h3>
+            <h1 class="first-title txt-prin" id="title-services" >we offer our clients</h1>
     
             <div class="cards-serices">
-                <div class="card-services-1">
+                <div class="card-services-1" id="card-services-1">
                     <div class="img-sqn"></div>
                     <div class="text-services">
                         <h1>Architecture</h1>
@@ -228,7 +232,7 @@
                     </div>
                 </div>
     
-                <div class="card-services-1">
+                <div class="card-services-1" id="card-services-2">
                     <div class="img-sqn"></div>
                     <div class="text-services">
                         <h1>Construction</h1>
@@ -236,7 +240,7 @@
                     </div>
                 </div>
     
-                <div class="card-services-1">
+                <div class="card-services-1" id="card-services-3">
                     <div class="img-sqn"></div>
                     <div class="text-services">
                         <h1>Consulting</h1>
@@ -244,7 +248,7 @@
                     </div>
                 </div>
     
-                <div class="card-services-1">
+                <div class="card-services-1" id="card-services-4">
                     <div class="img-sqn"></div>
                     <div class="text-services">
                         <h1>Green Building</h1>
@@ -252,7 +256,7 @@
                     </div>
                 </div>
     
-                <div class="card-services-1">
+                <div class="card-services-1" id="card-services-5">
                     <div class="img-sqn"></div>
                     <div class="text-services">
                         <h1>Green Building</h1>
@@ -260,7 +264,7 @@
                     </div>
                 </div>
     
-                <div class="card-services-1">
+                <div class="card-services-1" id="card-services-6">
                     <div class="img-sqn"></div>
                     <div class="text-services">
                         <h1>Metal Roofing</h1>
@@ -271,10 +275,10 @@
         </section>
     
         <section class="our-work">
-            <h2 class="sub-title-work">Our Work</h2>
-            <h1 class="title-wokr">Explore our recent project</h1>            
+            <h2 class="sub-title-work sub-txt">Our Work</h2>
+            <h1 class="title-wokr txt-prin">Explore our recent project</h1>            
         
-            <div class="galery">
+            <div class="galery photos">
                 <div class="itemGalery photo01">
                     <img class="imgGalery" src="./assests/Rectangle 24.png" alt="grua na frente de predios lindos">
                 </div>
@@ -323,7 +327,7 @@
             </div>
         </section>
 
-        <section class="our-team">
+        <section class="our-team team-prop">
             <h2 class="team-text1">Our Team</h2>
             <h1 class="team-text2">We have Experienced Members</h1>
 
@@ -356,7 +360,7 @@
             
         </section>
 
-        <section class="testimonials">
+        <section class="testimonials coment">
             <div id="testimonials-header">
                 <h1 class="testimonial-title">Avaliações</h1>
                 <h2 class="testimonial-subt">O que os clientes dizem </h2>

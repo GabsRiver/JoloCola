@@ -95,6 +95,23 @@ revelar.reveal('.sub-txt',
     distance: '80px',
     delay: 500,
   })
+// can help you
+
+revelar.reveal('.helpShow', 
+  {
+    duration: 2000,
+    distance: '100px',
+    delay: 500,
+    origin: 'left'
+  })
+
+revelar.reveal('.fotinha', 
+  {
+    duration: 2000,
+    distance: '100px',
+    delay: 700,
+    origin: 'right'
+  })
 
 //cards 
 revelar.reveal('.card-choose',

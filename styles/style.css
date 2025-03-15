@@ -95,7 +95,7 @@ header {
 
 /* -------------------nav style------------------------------------------------------ */
 .navigation-container {
-  display: flex;  
+  display: flex;
   width: 86rem;
   height: 5.5rem;
   background-color: #ff7b00;
@@ -117,7 +117,7 @@ header {
 }
 
 .img-logo {
-  width: 120px;  
+  width: 120px;
 }
 
 .nav-content {
@@ -228,25 +228,6 @@ header {
 
 /* -----------------------------------we-help-you------------------------------------*/
 
-.we-help-you {
-  animation: appear 1ms ease-in-out;
-  animation-timeline: view();
-  animation-range: cover 0% cover 50%;
-  
-}
-
-@keyframes appear {
-  from {
-    opacity: 0;
-    translate: -100vw 0;
-  }
-  
-  to {
-    opacity: 1;
-    translate: 0 0;
-  }
-}
-
 .text-sectio-help {
   height: 43.75rem;
   width: 100%;
@@ -265,6 +246,7 @@ header {
   font-family: "Roboto", sans-serif;
   font-weight: 500;
   font-size: 1.2rem;
+  white-space: normal;
 }
 
 .text-setup h1 {
@@ -272,6 +254,7 @@ header {
   font-weight: 800;
   font-size: 2rem;
   margin-top: 20px;
+  white-space: normal;
 }
 
 .text-setup h2 {
@@ -280,6 +263,7 @@ header {
   font-size: 1rem;
   color: #999999;
   margin-top: 20px;
+  white-space: normal;
 }
 
 .details-read-more {
@@ -296,6 +280,7 @@ header {
 .details-read-more h2 {
   color: #ff7b00;
   margin-left: 15px;
+  white-space: normal;
 }
 
 .btn-help {
@@ -328,10 +313,10 @@ header {
 
 /*-------card--------*/
 .cards-help {
-  display: flex; 
+  display: flex;
   width: 100%;
   height: 14rem;
-  background-color: #d9d9d9;  
+  background-color: #d9d9d9;
 }
 
 .card {
@@ -379,7 +364,7 @@ h2 {
   margin-top: 10px;
 }
 
-.card-scroll {   
+.card-scroll {
   opacity: 0;
   filter: blur(20px);
   transform: translateX(-100%);
@@ -463,6 +448,9 @@ h2 {
   font-size: 0.8rem;
   margin-top: 10px;
   letter-spacing: 2px;
+  word-break: normal;
+  overflow-wrap: break-word;
+  white-space: normal;
 }
 
 /* -----------------------------------OUR SERVICES ------------------------------------*/
@@ -733,7 +721,7 @@ h2 {
   border-radius: 12px;
 }
 
-.testimonial-author {  
+.testimonial-author {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -741,25 +729,25 @@ h2 {
 }
 
 .testimonial-img {
-    width: 80px;
-    height: 80px;
-    border-radius: 45%;
+  width: 80px;
+  height: 80px;
+  border-radius: 45%;
 }
 
 .testimonial-name {
-    font-family: "Montserrat", sans-serif;
-    font-size: 1rem;
-    font-weight: 700;
-    color: black;
-    margin-top: 15px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1rem;
+  font-weight: 700;
+  color: black;
+  margin-top: 15px;
 }
 
 .testimonial-coment {
-    text-align: center;
-    font-family: "Roboto", sans-serif;
-    font-size: 0.9rem;
-    font-weight: 400;
-    color: #999999;
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+  font-size: 0.9rem;
+  font-weight: 400;
+  color: #999999;
 }
 
 /* -----------------------------------contact------------------------------------*/
@@ -771,10 +759,10 @@ h2 {
 }
 
 .bar-contact-us {
-  display: flex;  
+  display: flex;
   align-items: center;
   justify-content: center;
-  gap: 90px;  
+  gap: 90px;
 }
 
 .call-contact {
@@ -783,7 +771,6 @@ h2 {
   font-weight: 700;
   color: #fff;
   margin-top: 40px;
-
 }
 
 .call-back {
@@ -803,7 +790,7 @@ h2 {
 }
 
 .call-back:hover {
-  background-color: grey;  
+  background-color: grey;
   box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
 }
 
@@ -853,17 +840,17 @@ h2 {
   color: #fff;
   text-decoration: none;
   cursor: pointer;
-  transition: color 0.3s ease;  
+  transition: color 0.3s ease;
 }
-  
+
 #header-face-icon:hover {
   color: #4267b2;
 }
-  
+
 #header-insta-icon:hover {
   color: #e1306c;
 }
-  
+
 #header-you-icon:hover {
   color: #ff0000;
 }
@@ -900,7 +887,7 @@ h2 {
 .suport {
   display: flex;
   flex-direction: column;
-  margin-top: 85px;  
+  margin-top: 85px;
   margin-left: 100px;
 }
 
@@ -923,7 +910,7 @@ h2 {
 .contact {
   display: flex;
   flex-direction: column;
-  margin-top: 85px;  
+  margin-top: 85px;
   margin-left: 100px;
 }
 
@@ -946,7 +933,7 @@ h2 {
 .direitos-desig {
   display: flex;
   justify-content: space-between;
-  margin: 5px 20px ;
+  margin: 5px 20px;
 }
 
 /* creditos */
@@ -961,9 +948,23 @@ h2 {
 
 /*------------------------------------ Scrowl detalhes -------------------------------*/
 
-.txt-prin, .sub-txt, .card-choose, .card-choosee, #card-services-1, #card-services-2, #card-services-3,
-#card-services-4, #card-services-5, #card-services-6, .cat1, .cat2, .cat3, .cat4, .photos,
-.team-prop, .coment {
+.txt-prin,
+.sub-txt,
+.card-choose,
+.card-choosee,
+#card-services-1,
+#card-services-2,
+#card-services-3,
+#card-services-4,
+#card-services-5,
+#card-services-6,
+.cat1,
+.cat2,
+.cat3,
+.cat4,
+.photos,
+.team-prop,
+.coment {
   visibility: hidden;
 }
 
@@ -977,13 +978,13 @@ h2 {
 
   .container-losango {
     height: 350px;
-    width: 350px;  
+    width: 350px;
     left: 10px;
     top: 95px;
   }
-  
+
   /* can help you */
-  .details-read {    
+  .details-read {
     display: grid;
     flex-direction: column;
     grid-template-columns: repeat(2, 1fr);
@@ -991,13 +992,13 @@ h2 {
     position: relative;
   }
 
-  .text-setup {        
+  .text-setup {
     margin: 140px 0 0 50px;
   }
 
-  .operario-help {  
+  .operario-help {
     width: 400px;
-    height: 420px;  
+    height: 420px;
     margin: 180px 0 0 150px;
   }
 
@@ -1013,12 +1014,12 @@ h2 {
     background-color: #d9d9d9;
   }
 
-  .cards-serices {    
-    grid-template-columns: 1fr 1fr;  
+  .cards-serices {
+    grid-template-columns: 1fr 1fr;
   }
 
-  .our-services {    
-    height: 40.5rem;    
+  .our-services {
+    height: 40.5rem;
   }
 
   /* OUR TEAM */
@@ -1028,38 +1029,38 @@ h2 {
   }
 
   /* footer */
-  .company-Name {    
+  .company-Name {
     margin: 85px 0 0 100px;
   }
 }
 
-
-@media (max-width: 1300px) {/*------------------------------------------------------------*/
+@media (max-width: 1300px) {
+  /*------------------------------------------------------------*/
   /*header */
-  header {    
-    height: 70px;    
+  header {
+    height: 70px;
     padding: 0 11.31rem;
   }
-  
+
   .text-header h3 {
     margin-bottom: 5px;
-    font-size: 12px;    
+    font-size: 12px;
   }
-  
+
   .text-header p {
     font-size: 12px;
   }
 
-  .header-redes {    
-    gap: 32px;    
+  .header-redes {
+    gap: 32px;
   }
 
   /* Nav Bar*/
-  .navigation-container {    
+  .navigation-container {
     width: 60rem;
-    height: 5.5rem;    
+    height: 5.5rem;
     top: 70px;
-    left: 50%;    
+    left: 50%;
   }
 
   /* te ajudamos */
@@ -1068,17 +1069,17 @@ h2 {
     margin-left: 3rem;
   }
 
-  .home-apresetation h1 {    
-    font-size: 40px;    
+  .home-apresetation h1 {
+    font-size: 40px;
   }
 
   .container-losango {
     height: 50px;
-    width: 50px;  
+    width: 50px;
     left: 10px;
     top: 72px;
   }
-  
+
   /* can help you */
   .text-sectio-help {
     height: 53.75rem;
@@ -1086,7 +1087,7 @@ h2 {
     display: flex;
   }
 
-  .details-read {    
+  .details-read {
     display: grid;
     flex-direction: column;
     grid-template-columns: repeat(2, 1fr);
@@ -1094,13 +1095,13 @@ h2 {
     position: relative;
   }
 
-  .text-setup {        
+  .text-setup {
     margin: 260px 0 0 50px;
   }
 
-  .operario-help {  
+  .operario-help {
     width: 400px;
-    height: 420px;  
+    height: 420px;
     margin: 270px 0 0 150px;
   }
 
@@ -1116,17 +1117,17 @@ h2 {
     background-color: #d9d9d9;
   }
 
-  .cards-serices {    
-    grid-template-columns: 1fr 1fr;  
+  .cards-serices {
+    grid-template-columns: 1fr 1fr;
   }
 
-  .our-services {    
-    height: 40.5rem;    
+  .our-services {
+    height: 40.5rem;
   }
 
   /* point bar */
   .pointBar {
-    gap: 100px;    
+    gap: 100px;
   }
 
   /* OUR TEAM */
@@ -1136,65 +1137,65 @@ h2 {
   }
 
   /* Bar convite */
-  .call-contact {    
-    font-size: 1.5rem;   
+  .call-contact {
+    font-size: 1.5rem;
   }
 
   /* footer */
-  .info-footer {   
+  .info-footer {
     gap: 10px;
   }
 
-  .company-Name {    
+  .company-Name {
     margin: 45px 0 0 30px;
   }
 
-  .quick-links {    
-    margin-top: 45px;   
+  .quick-links {
+    margin-top: 45px;
     margin-left: 150px;
   }
-  
-  .suport {    
-    margin-top: 45px;      
+
+  .suport {
+    margin-top: 45px;
   }
 
-  .contact {   
-    margin-top: 45px; 
-    
+  .contact {
+    margin-top: 45px;
   }
 }
 
-@media (max-width: 800px) {/*--------------------------------------------------------*/
+@media (max-width: 800px) {
+  /*--------------------------------------------------------*/
   /*header */
-  header {      
-      align-items: center;
-      justify-content: center;
-      padding: 0;
+  header {
+    width: 100vw;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
   }
 
   .header-nav-contact {
     display: flex;
     margin: 0;
   }
-  
-  
+
   .text-header h3 {
     margin-bottom: 5px;
-    font-size: 12px;    
+    font-size: 12px;
   }
-  
+
   .text-header p {
     font-size: 12px;
   }
 
-  .header-redes {    
-    gap: 32px;    
+  .header-redes {
+    gap: 32px;
   }
 
   /* Nav Bar*/
   .navigation-container {
-    display: flex;  
-    width: 100%;
+    display: flex;
+    width: 100vw;
     height: 5rem;
     background-color: #ff7b00;
     position: absolute;
@@ -1204,7 +1205,7 @@ h2 {
     z-index: 2;
     border-bottom-left-radius: 0;
     border-bottom-right-radius: 0;
-  } 
+  }
 
   .hamburger {
     display: block;
@@ -1279,14 +1280,13 @@ h2 {
   }
 
   .nav-bar-menu.active .hamburger::before {
-    transform: rotate(135deg);    
+    transform: rotate(135deg);
   }
 
   .nav-bar-menu.active .hamburger::after {
     transform: rotate(-135deg);
     top: -7px;
   }
-
 
   /* te ajudamos */
   .home-container {
@@ -1304,48 +1304,168 @@ h2 {
     margin-left: 3rem;
   }
 
-  .home-apresetation h1 {    
-    font-size: 30px;    
+  .home-apresetation h1 {
+    font-size: 30px;
   }
 
   .container-losango {
-    left: 344px;
-    top:0
+    left: 316px;
+    top: 0;
   }
 
   .losango img {
     height: 490px;
     width: 450px;
   }
-  
+
   /* can help you */
-  .text-sectio-help {
-    height: 53.75rem;
+  .we-help-you {
+    height: 73.75rem;
     width: 100%;
+  }
+
+  .principal {
+    margin-left: 250px;
+  }
+
+  .codju {
+    margin-left: 150px;
+  }
+
+  .apoio {
+    margin-left: 160px;
+  }
+
+  .text-sectio-help {
     display: flex;
-  }
-
-  .details-read {    
-    display: grid;
     flex-direction: column;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 2px;
-    position: relative;
   }
 
-  .text-setup {        
-    margin: 260px 0 0 50px;
+  .text-setup {
+    display: flex;
+    flex-direction: column;
+    margin: 50px 0 0 10px;
+    justify-content: center;
   }
 
-  .operario-help {  
-    width: 400px;
-    height: 420px;  
-    margin: 270px 0 0 150px;
+  .text-setup h3 {
+    font-size: 1rem;
   }
 
-  /* card */
-  #card1 {
-    margin-left: 10px;
+  .details-read-more {
+    display: flex;
+    align-items: center;
+    margin: 10px 5px;
+  }
+
+  .details-read-more i {
+    margin-top: 20px;
+    color: #ff7b00;
+  }
+
+  .details-read-more h2 {
+    color: #ff7b00;
+    margin-left: 15px;
+    word-break: break-all;
+    display: block;
+    white-space: normal;
+  }
+
+  .btn-help {
+    margin: 64px 15px;
+  }
+
+  .operario-help {
+    width: 450px;
+    height: 490px;
+    margin: 20px 0 0 180px;
+  }
+
+  /* Cards */
+  .cards-help {
+    flex-direction: column;
+    width: 100vw;
+    align-items: center;
+    height: 36rem;
+  }
+
+  .card {
+    width: 25.87rem;
+    height: 9rem;
+    margin: 35px 0 0 10px;
+  }
+
+  .card img {
+    width: 100px;
+    height: 100px;
+  }
+
+  .card-scroll {
+    opacity: 0;
+    filter: blur(20px);
+    transform: translateX(-100%);
+    transition: opacity 2s, filter 2.2s, transform 2s; /* Define transições específicas */
+  }
+
+  .card-show {
+    opacity: 1;
+    filter: blur(0);
+    transform: translateX(0);
+  }
+
+  /* Aplica delay para os filhos de .cards-help */
+  .cards-help .card-scroll:nth-child(1) {
+    transition-delay: 0ms; /* Sem delay para o primeiro card */
+  }
+
+  .cards-help .card-scroll:nth-child(2) {
+    transition-delay: 500ms; /* Delay para o segundo card */
+  }
+
+  .cards-help .card-scroll:nth-child(3) {
+    transition-delay: 800ms; /* Delay para o terceiro*/
+  }
+
+  /* why choose */
+  .why-choose-us {
+    width: 100vw;
+  }
+
+  .cards-choose {   
+    margin-top: 50px;
+    grid-row: 49px;
+    gap: 20px;
+  }
+
+  .card-choose-1 {
+    height: 100px;
+    width: 420px;
+    display: flex;
+    
+  }
+
+  .img-sqn {
+    width: 100px;
+    height: 100px;
+    background-color: #d9d9d9;
+    position: absolute;
+  }
+
+  .text-choose {
+    margin-left: 25px;
+  }
+
+  .text-choose h1 {
+    font-family: "Montserrat", sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+  }
+
+  .text-choose h3 {
+    font-family: "Opens sans", sans-serif;
+    font-size: 0.8rem;
+    margin-top: 10px;
+    letter-spacing: 2px;
   }
 
   /* our Services */
@@ -1355,17 +1475,17 @@ h2 {
     background-color: #d9d9d9;
   }
 
-  .cards-serices {    
-    grid-template-columns: 1fr 1fr;  
+  .cards-serices {
+    grid-template-columns: 1fr 1fr;
   }
 
-  .our-services {    
-    height: 40.5rem;    
+  .our-services {
+    height: 40.5rem;
   }
 
   /* point bar */
   .pointBar {
-    gap: 100px;    
+    gap: 100px;
   }
 
   /* OUR TEAM */
@@ -1375,30 +1495,29 @@ h2 {
   }
 
   /* Bar convite */
-  .call-contact {    
-    font-size: 1.5rem;   
+  .call-contact {
+    font-size: 1.5rem;
   }
 
   /* footer */
-  .info-footer {   
+  .info-footer {
     gap: 10px;
   }
 
-  .company-Name {    
+  .company-Name {
     margin: 45px 0 0 30px;
   }
 
-  .quick-links {    
-    margin-top: 45px;   
+  .quick-links {
+    margin-top: 45px;
     margin-left: 150px;
   }
-  
-  .suport {    
-    margin-top: 45px;      
+
+  .suport {
+    margin-top: 45px;
   }
 
-  .contact {   
-    margin-top: 45px; 
-    
+  .contact {
+    margin-top: 45px;
   }
 }

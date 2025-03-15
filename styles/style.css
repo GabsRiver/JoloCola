@@ -761,8 +761,7 @@ h2 {
 .bar-contact-us {
   display: flex;
   align-items: center;
-  justify-content: center;
-  gap: 90px;
+  justify-content: space-between;  
 }
 
 .call-contact {
@@ -930,7 +929,7 @@ h2 {
   margin-top: 15px;
 }
 
-.direitos-desig {
+.direitos-desig {  
   display: flex;
   justify-content: space-between;
   margin: 5px 20px;
@@ -1431,93 +1430,205 @@ h2 {
     width: 100vw;
   }
 
-  .cards-choose {   
-    margin-top: 50px;
-    grid-row: 49px;
-    gap: 20px;
+  .cards-choose {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
   }
 
   .card-choose-1 {
-    height: 100px;
-    width: 420px;
+    height: 200px;
+    width: 350px;
     display: flex;
-    
+  }
+
+  .imgsqn {
+    width: 130px;
+    height: 100px;
+    background-color: #d9d9d9;
+    position: static;
+    display: inline-block;
+  }
+
+  .text-choose {
+    width: 80%;
+    margin-left: 25px;
+  }
+
+  .text-choose h1 {
+    font-size: 1rem;
+  }
+
+  /* our Services */
+  .our-services {
+    width: 100vw;
+  }
+
+  .sub-title {
+    margin-top: 25px;
+  }
+
+  .cards-serices {
+    width: 95%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin-top: 60px;
+    grid-row: 10px;
+    align-items: center;
+    margin-left: 80px;
+  }
+
+  .card-services-1 {
+    height: 130px;
+    width: 90%;
+    display: flex;
   }
 
   .img-sqn {
     width: 100px;
     height: 100px;
     background-color: #d9d9d9;
-    position: absolute;
+    position: static;
+    display: inline-block;
   }
 
-  .text-choose {
+  .text-services {
+    width: 70%;
     margin-left: 25px;
   }
 
-  .text-choose h1 {
-    font-family: "Montserrat", sans-serif;
-    font-size: 16px;
-    font-weight: 600;
-  }
-
-  .text-choose h3 {
-    font-family: "Opens sans", sans-serif;
-    font-size: 0.8rem;
-    margin-top: 10px;
-    letter-spacing: 2px;
-  }
-
-  /* our Services */
-  .img-sqn {
-    width: 80px;
-    height: 80px;
-    background-color: #d9d9d9;
-  }
-
-  .cards-serices {
-    grid-template-columns: 1fr 1fr;
-  }
-
-  .our-services {
-    height: 40.5rem;
+  .text-services h1 {
+    font-size: 1rem;
   }
 
   /* point bar */
   .pointBar {
-    gap: 100px;
+    width: 100vw;
+    gap: 80px;
+  }
+
+  .categori h3 {
+    font-size: 1rem;
   }
 
   /* OUR TEAM */
-  .img-team {
-    width: 15.62rem;
-    height: 12.5rem;
+  .our-team {
+    width: 100vw;
+    height: 25rem;
   }
 
-  /* Bar convite */
-  .call-contact {
-    font-size: 1.5rem;
+  .cards-team {
+    width: 90%;
+    display: flex;
+    gap: 0 35px;
+    margin-top: 3rem;
   }
+
+  .img-team {
+    width: 100%;
+    height: 10rem;
+  }
+
+  /* testimonials */
+  .testimonials {
+    width: 100vw;
+  }
+
+  .swiper {
+    height: 300px;
+  } 
+
+  .swiper {
+    width: 100%;    
+  }  
+
+  /* Bar convite */
+  .bar-convite {
+    width: 100vw;    
+  }
+  
+  .bar-contact-us {
+    width: 100%;    
+  }
+  
+  .call-contact {    
+    font-size: 1.5rem;    
+    margin-top: 40px;
+    margin-left: 15px;
+  }
+  
+  .call-back {
+    width: 250px;
+    height: 60px;    
+    margin-top: 30px;    
+    font-size: 1.6rem;
+    margin-right: 15px;    
+  } 
+ 
 
   /* footer */
   .info-footer {
-    gap: 10px;
+    width: 100vw;
+    height: 26rem;    
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
   }
-
+  
   .company-Name {
-    margin: 45px 0 0 30px;
+    display: flex;
+    flex-direction: row;    
+    margin: 70px 0 0 30px;
+    gap: 45px;
+    justify-content: center;
+    align-items: center;
+  }  
+  
+  .about-footer {    
+    margin-top: 0;
   }
-
-  .quick-links {
-    margin-top: 45px;
-    margin-left: 150px;
-  }
-
+  
+  .footer-redes {    
+    margin-top: 0;
+  } 
+  
+  .quick-links {    
+    flex-direction: row;
+    margin-top: 10px;
+    align-items: center;
+    margin-left: 100px;
+  }  
+  
+  .links-fast {
+    display: grid;    
+    grid-template-columns: repeat(3, 2fr);
+    gap: 12px;
+    margin: 0 20px;
+  }  
+  
   .suport {
-    margin-top: 45px;
+    display: flex;
+    flex-direction: row;
+    margin-top: 10px;
+    margin-left: 100px;
+    gap: 30px;
+    
   }
+  
+  .suport a {    
+    margin-top: 6px;
+  } 
 
   .contact {
-    margin-top: 45px;
+    display: flex;
+    flex-direction: row;
+    margin-top: 5px;
+    margin-left: 100px;
+    gap: 30px;
   }
+  
+  .contact a {    
+    margin-top: 7px;
+  } 
+  
 }

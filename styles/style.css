@@ -12,6 +12,12 @@
   /*overflow: hidden;*/
 }
 
+body,
+html {
+  overflow-x: hidden;
+  width: 100%;
+}
+
 /* ----------Header style -----------------------------------------------------*/
 header {
   width: 100%;
@@ -106,6 +112,7 @@ header {
   z-index: 2;
   border-bottom-left-radius: 15px;
   border-bottom-right-radius: 15px;
+  overflow: hidden;
 }
 
 .nav-bar-menu {
@@ -161,6 +168,10 @@ header {
 }
 
 /* -------------------home style main ----------------------------------------------------------*/
+main {
+  width: 100%;
+}
+
 .home-container {
   display: flex;
   background-image: url(../assests/homePageBackground.png);
@@ -226,7 +237,7 @@ header {
   filter: blur(0);
 }
 
-/* -----------------------------------we-help-you------------------------------------*/
+/* -----------------------------------can-help-you------------------------------------*/
 
 .text-sectio-help {
   height: 43.75rem;
@@ -419,22 +430,27 @@ h2 {
   grid-template-columns: 1fr 1fr;
   margin-top: 60px;
   grid-row: 51px;
+  width: 90%;
+  margin-left: 100px;
 }
 
 .card-choose-1 {
   height: 163px;
-  width: 507px;
+  width: 90%;
   display: flex;
 }
 
-.img-sqn {
+.imgsqn {
   width: 100px;
   height: 100px;
   background-color: #d9d9d9;
+  position: static;
+  display: inline-block;
 }
 
 .text-choose {
   margin-left: 25px;
+  width: 80%;
 }
 
 .text-choose h1 {
@@ -761,7 +777,7 @@ h2 {
 .bar-contact-us {
   display: flex;
   align-items: center;
-  justify-content: space-between;  
+  justify-content: space-between;
 }
 
 .call-contact {
@@ -769,13 +785,13 @@ h2 {
   font-size: 2rem;
   font-weight: 700;
   color: #fff;
-  margin-top: 40px;
+  margin: 40px 0 0 20px;
 }
 
 .call-back {
   width: 250px;
   height: 60px;
-  margin-top: 40px;
+  margin: 40px 20px 0 0;
   border: 2px solid #fff;
   border-radius: 11px;
   background-color: #fff;
@@ -929,7 +945,7 @@ h2 {
   margin-top: 15px;
 }
 
-.direitos-desig {  
+.direitos-desig {
   display: flex;
   justify-content: space-between;
   margin: 5px 20px;
@@ -970,6 +986,12 @@ h2 {
 /*---------------------- RESPONSIVOO ----------------------------*/
 
 @media (max-width: 1600px) {
+  body,
+  html {
+    overflow-x: hidden;
+    width: 100%;
+  }
+
   .home-apresetation {
     margin-top: 18rem;
     margin-left: 10rem;
@@ -1033,7 +1055,7 @@ h2 {
   }
 }
 
-@media (max-width: 1300px) {
+@media (max-width: 1350px) {
   /*------------------------------------------------------------*/
   /*header */
   header {
@@ -1065,18 +1087,21 @@ h2 {
   /* te ajudamos */
   .home-apresetation {
     margin-top: 15rem;
-    margin-left: 3rem;
+    margin-left: 3.25rem;
   }
 
   .home-apresetation h1 {
-    font-size: 40px;
+    font-size: 35px;
   }
 
   .container-losango {
-    height: 50px;
-    width: 50px;
-    left: 10px;
-    top: 72px;
+    left: 183px;
+    top: 82px;
+  }
+
+  .losango img {
+    width: 600px;
+    height: 700px;
   }
 
   /* can help you */
@@ -1099,18 +1124,18 @@ h2 {
   }
 
   .operario-help {
-    width: 400px;
+    width: 450px;
     height: 420px;
-    margin: 270px 0 0 150px;
+    margin: 270px 0 0 30px;
   }
 
   /* card */
   #card1 {
-    margin-left: 10px;
+    margin-left: 70px;
   }
 
   /* our Services */
-  .img-sqn {
+  .imgsqn {
     width: 80px;
     height: 80px;
     background-color: #d9d9d9;
@@ -1163,11 +1188,169 @@ h2 {
   }
 }
 
-@media (max-width: 800px) {
+@media (max-width: 1100px) {
+  /* te ajudamos */
+  .home-apresetation {
+    margin-top: 15rem;
+    margin-left: 3.25rem;
+  }
+
+  .home-apresetation h1 {
+    font-size: 30px;
+  }
+
+  .container-losango {
+    left: 115px;
+    top: 160px;
+  }
+
+  .losango img {
+    width: 500px;
+    height: 600px;
+  }
+
+  /* can help you */
+  .text-setup {
+    width: 630px;
+  }
+
+  .operario-help {
+    width: 380px;
+    height: 420px;
+    margin: 270px 0 0 20px;
+  }
+
+  /* card */
+  #card1 {
+    margin-left: 15px;
+  }
+
+  .card {
+    margin: 35px 0 0 10px;
+  }
+
+  /* point bar */
+  .pointBar {
+    gap: 90px;
+  }
+
+  /* OUR TEAM */
+  .our-team {
+    width: 100%;
+    height: 30rem;
+  }
+
+  .cards-team {
+    width: 96%;
+    display: flex;
+    gap: 0 35px;
+    margin-top: 3rem;
+  }
+
+  .img-team {
+    width: 100%;
+    height: 11rem;
+  }
+}
+
+@media (max-width: 1000px) {
   /*--------------------------------------------------------*/
   /*header */
   header {
-    width: 100vw;
+    height: 100px;
+    padding: 0;
+  }
+
+  /* -------Header style -----*/
+  .header-bartop {
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+  }
+
+  .header-nav-contact {
+    margin: 0.25rem 20px;
+  }
+
+  .header-content {
+    margin: 10px 10px;
+  }
+
+  .text-header {
+    margin: 0 12px;
+    flex-direction: column;
+    row-gap: 25px;
+  }
+
+  .header-redes {
+    margin: 10px 25px;
+    gap: 20px;
+  }
+
+  /* can help you */
+  .container-losango {
+    left: 80px;
+    top: 160px;
+  }
+
+  /* can help you */
+  .text-sectio-help {
+    height: 43.75rem;
+    width: 100%;
+    display: flex;
+  }
+
+  .text-setup {
+    margin: 80px 0 0 50px;
+    width: 469px;
+  }
+
+  .operario-help {
+    width: 430px;
+    height: 390px;
+    margin: 130px 0 0 30px;
+  }
+
+  /* ------card----*/
+  .card {
+    width: 315px;    
+  }
+
+  /* ------Our service -----*/
+  .cards-serices {
+    width: 90%;
+  }
+
+  .card-services-1 {
+    width: 471px;
+  }
+
+  /*--------Bar -------*/
+  .categori h3 {    
+    font-size: 22px;    
+  }
+
+  /* -------- footer -------*/
+  .quick-links {
+    margin-left: 83px;
+  }
+
+  .suport {
+    margin-left: 60px;
+  }
+}
+
+@media (max-width: 800px) {/*--------------------------------------------------------*/
+
+  body,
+  html {
+    overflow-x: hidden;
+    width: 100%;
+  }
+
+  /*header */
+  header {
+    width: 100%;
     align-items: center;
     justify-content: center;
     padding: 10px;
@@ -1188,13 +1371,13 @@ h2 {
   }
 
   .header-redes {
-    gap: 32px;
+    gap: 10px;
   }
 
   /* Nav Bar*/
   .navigation-container {
     display: flex;
-    width: 100vw;
+    width: 100%;
     height: 5rem;
     background-color: #ff7b00;
     position: absolute;
@@ -1208,14 +1391,14 @@ h2 {
 
   .hamburger {
     display: block;
-    z-index: 5;
+    z-index: 4;
   }
 
   .nav-content {
     position: fixed;
     top: 0;
     left: 0;
-    width: 100vw;
+    width: 100%;
     height: 100vh;
     background: #ff7b00;
     clip-path: circle(100px at 90% -15%);
@@ -1273,8 +1456,8 @@ h2 {
 
   .nav-bar-menu.active .hamburger {
     position: fixed;
-    top: 26px;
-    right: 16px;
+    top: 50px;
+    right: 140px;
     border-top-color: transparent;
   }
 
@@ -1324,27 +1507,27 @@ h2 {
   }
 
   .principal {
-    margin-left: 250px;
+    margin-left: 121px;
   }
 
   .codju {
-    margin-left: 150px;
+    margin-left: 0px;
   }
 
   .apoio {
-    margin-left: 160px;
+    margin-left: 0px;
   }
 
   .text-sectio-help {
     display: flex;
     flex-direction: column;
+    align-items: center;
   }
 
   .text-setup {
     display: flex;
     flex-direction: column;
-    margin: 50px 0 0 10px;
-    justify-content: center;
+    margin: 50px 0 0 0;    
   }
 
   .text-setup h3 {
@@ -1377,13 +1560,13 @@ h2 {
   .operario-help {
     width: 450px;
     height: 490px;
-    margin: 20px 0 0 180px;
+    margin: 2px 0 0 0px;
   }
 
   /* Cards */
   .cards-help {
     flex-direction: column;
-    width: 100vw;
+    width: 100%;
     align-items: center;
     height: 36rem;
   }
@@ -1427,7 +1610,7 @@ h2 {
 
   /* why choose */
   .why-choose-us {
-    width: 100vw;
+    width: 100%;
   }
 
   .cards-choose {
@@ -1536,88 +1719,86 @@ h2 {
 
   .swiper {
     height: 300px;
-  } 
+  }
 
   .swiper {
-    width: 100%;    
-  }  
+    width: 100%;
+  }
 
   /* Bar convite */
   .bar-convite {
-    width: 100vw;    
+    width: 100vw;
   }
-  
+
   .bar-contact-us {
-    width: 100%;    
+    width: 100%;
   }
-  
-  .call-contact {    
-    font-size: 1.5rem;    
+
+  .call-contact {
+    font-size: 1.5rem;
     margin-top: 40px;
     margin-left: 15px;
   }
-  
+
   .call-back {
     width: 250px;
-    height: 60px;    
-    margin-top: 30px;    
+    height: 60px;
+    margin-top: 30px;
     font-size: 1.6rem;
-    margin-right: 15px;    
-  } 
- 
+    margin-right: 15px;
+  }
 
   /* footer */
   .info-footer {
     width: 100vw;
-    height: 26rem;    
+    height: 26rem;
     display: flex;
     flex-direction: column;
     gap: 30px;
   }
-  
+
   .company-Name {
     display: flex;
-    flex-direction: row;    
+    flex-direction: row;
     margin: 70px 0 0 30px;
     gap: 45px;
     justify-content: center;
     align-items: center;
-  }  
-  
-  .about-footer {    
+  }
+
+  .about-footer {
     margin-top: 0;
   }
-  
-  .footer-redes {    
+
+  .footer-redes {
     margin-top: 0;
-  } 
-  
-  .quick-links {    
+  }
+
+  .quick-links {
     flex-direction: row;
     margin-top: 10px;
     align-items: center;
     margin-left: 100px;
-  }  
-  
+  }
+
   .links-fast {
-    display: grid;    
+    display: grid;
     grid-template-columns: repeat(3, 2fr);
     gap: 12px;
-    margin: 0 20px;
-  }  
-  
+    margin: 0 45px;
+  }
+
   .suport {
     display: flex;
     flex-direction: row;
     margin-top: 10px;
     margin-left: 100px;
     gap: 30px;
-    
   }
-  
-  .suport a {    
+
+  .suport a {
     margin-top: 6px;
-  } 
+  }
 
   .contact {
     display: flex;
@@ -1626,9 +1807,242 @@ h2 {
     margin-left: 100px;
     gap: 30px;
   }
-  
-  .contact a {    
+
+  .contact a {
     margin-top: 7px;
-  } 
-  
+  }
+
+  .suport-title {
+    margin-bottom: 0px;
+    margin-right: 110px;
+  }
+
+  .contact-title {
+    margin-right: 79px;
+  }
+}
+
+@media (max-width: 710px) {/*--------------------------------------------------*/
+   /*header */ 
+  .header-content {
+    margin: 0px 7px;
+  }
+
+  .header-redes {
+    gap: 7px;
+  }
+
+  /* te ajudamos */
+  .container-losango {
+    left: 291px;    
+  }
+
+  /* Why chose */
+  .card-choose-1 {
+    height: 191px;
+    width: 340px;    
+  }
+
+  .cards-choose {    
+    width: 100%;
+    margin-left: 52px;
+  }
+
+  /* point bar */
+  .pointBar {
+    width: 100vw;
+    gap: 80px;
+  }
+
+  .categori h3 {
+    font-size: 0.9rem;
+  }
+
+  /* OUR TEAM */  
+  .img-team {
+    width: 100%;
+    height: 9rem;
+  }
+
+  /* footer */
+  .quick-links {    
+    margin-left: 61px;
+  }
+
+  .links-fast {    
+    margin: 0 38px;
+  }
+
+  .suport {
+    margin-top: 1px;
+  }
+
+  .suport-title {    
+    margin-right: 62px;
+  }
+
+  .contact{
+    margin-left: 86px;
+  }
+
+  .contact-title {
+    margin-right: 47px;
+  }
+}
+
+@media (max-width: 600px) {/*--------------------------------------------------*/
+  /*header*/
+  .header-redes {
+    display: none;    
+  }
+
+  .header-nav-contact {
+    margin: 10px 20px;
+  }
+
+  /*te ajudamos*/
+  .container-losango {
+    left: 164px;    
+  }
+
+  .cards-choose {
+    width: 98%;
+    margin-left: 19px;
+  }
+
+  .card-choose-1 {
+    height: 191px;
+    width: 96%;
+  }
+
+  /* Bar */
+  .pointBar {
+    width: 100%;
+    gap: 0px;
+  }
+
+  .categori {   
+    width: 90%;
+  }
+
+  /* FOOTER */
+  .company-Name {
+    margin: 27px 0 0 30px;
+  }
+
+  .footer-redes {
+    gap: 11px;
+  }
+
+  .suport {
+    margin-left: 62px;
+  }
+
+  .suport-title {
+    margin-right: 78px;
+  }
+
+  .contact {
+    margin-left: 47px;
+  }
+
+  .contact-title {
+    margin-right: 63px;
+  }
+}
+
+@media (max-width: 600px) {/*--------------------------------------------------*/
+
+  /* Header */
+  .header-nav-contact {
+    margin: 0 0;
+  }
+
+  .text-header p {
+    font-size: 11px;
+  }
+
+  /*te ajudamos */
+  .operario-help {
+    width: 373px;
+    height: 490px;
+    margin: 19px 0 0 0px;
+  }
+
+  /*why choose */
+  .why-choose-us {
+    height: 57.8rem;
+  }
+
+  .cards-choose {  
+    grid-template-columns: repeat(1, 1fr);  
+  }
+
+  /* Services */
+  .cards-serices {
+    margin-left: 20px;
+  }
+
+  /*Our team*/
+  .img-team {   
+    height: 7rem;
+  }
+
+  /*bar convite*/
+  .bar-convite {    
+    height: 14rem;    
+  }
+
+  .bar-contact-us {    
+    flex-direction: column;    
+  }
+
+  .call-contact {    
+    margin-left: 33px;
+  }
+
+  /*our team */
+  .team-text2 {
+    font-size: 1.5rem;
+  }
+
+  /*footer*/
+  .info-footer {
+    gap: 24px;
+  }
+
+  .company-Name {
+    margin: 27px 0 0 10px;
+  }
+
+  .footer-redes{
+    margin-right: 16px;
+  }
+
+  .quick-links {
+    margin-left: 48px;
+  }
+
+  .links-fast{
+    gap: 0;
+    margin: 0;
+    margin-left: 14px;
+  }
+
+  .suport {
+    margin-left: 50px;
+  }
+
+  .sub-title {
+    margin-right: 53px;
+  }
+
+  .contact{
+    margin-left: 38px;
+  }
+
+  .contact-title {
+    margin-right: 37px;
+  }
+
 }

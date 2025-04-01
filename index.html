@@ -16,27 +16,39 @@
     
                 <div class="header-nav-contact">
                     
-                    <div class="header-content" id="header-email">
+                    <div class="header-content" id="header-email" onclick="toggleCard('email')">
                         <i id="header-icon" class="fa-solid fa-envelope"></i>
                         <div class="text-header">
                             <h3>E-mail</h3>
                             <p>email@seu.com</p>
                         </div>
+                        <div class="info-card" id="email-card">
+                            <p id="text-info-card">E-mail: email@seu.com</p>
+                            <button onclick="event.stopPropagation(); hideCard('email')">×</button>
+                        </div>
                     </div>
         
-                    <div class="header-content" id="header-contact">
+                    <div class="header-content" id="header-contact" onclick="toggleCard('telefone')">
                         <i id="header-icon" class="fa-solid fa-phone"></i>
                         <div class="text-header">
                             <h3>Contato</h3>
                             <p>41 00000-0000</p>
                         </div>
+                        <div class="info-card" id="telefone-card">
+                            <p id="text-info-card">Telefone: 41 00000-0000</p>
+                            <button onclick="event.stopPropagation(); hideCard('telefone')">×</button>
+                        </div>
                     </div>
         
-                    <div class="header-content" id="header-opening">
+                    <div class="header-content" id="header-opening" onclick="toggleCard('horario')">
                         <i id="header-icon" class="fa-regular fa-clock"></i>
                         <div class="text-header">
                             <h3>Opening Time</h3>
                             <p>seg - 7:00 - 18:00</p>
+                        </div>
+                        <div class="info-card" id="horario-card">
+                            <p id="text-info-card">Horário de Funcionamento:<br>seg - 7:00 - 18:00</p>
+                            <button onclick="event.stopPropagation(); hideCard('horario')">×</button>
                         </div>
                     </div>
                 </div>
@@ -557,16 +569,21 @@
 
                 <div class="suport">
                     <h1 class="suport-title">Suport</h1>
-                    <a href="">Quem somos nós</a>
-                    <a href="">Loja</a>
-                    <a href="">FAQ</a>
+                    <div>
+                        <a href="">Quem somos nós</a>
+                        <a href="">Loja</a>
+                        <a href="">FAQ</a>
+
+                    </div>
                 </div>
 
                 <div class="contact">
                     <h1 class="contact-title">Contatos</h1>
-                    <a href="">Endereço</a>
-                    <a href="">Telefone</a>
-                    <a href="">Email</a>
+                    <div>
+                        <a href="">Endereço</a>
+                        <a href="">Telefone</a>
+                        <a href="">Email</a>
+                    </div>
                 </div>
 
             </div>

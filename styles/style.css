@@ -99,6 +99,51 @@ header {
   color: #ff0000;
 }
 
+/* header icon */
+.info-card {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  background: white;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  z-index: 100;
+  height: 100px;
+  width: 300px;
+  animation: fadeIn 0.3s ease;  
+}
+
+.info-card button {
+  position: absolute;
+  top: 5px;
+  right: 10px;
+  background: none;
+  border: none;
+  font-size: 22px;
+  cursor: pointer;
+  color: #666;
+}
+
+.info-card button:hover {
+  color: #333;
+}
+
+#text-info-card {
+  font-family: "Opens sans", sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  color: #000;
+  margin-top: 20px;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateX(-50%) translateY(-10px); }
+  to { opacity: 1; transform: translateX(-50%) translateY(0); }
+}
+
 /* -------------------nav style------------------------------------------------------ */
 .navigation-container {
   display: flex;
@@ -2045,4 +2090,410 @@ h2 {
     margin-right: 37px;
   }
 
+}
+
+@media (max-width: 500px) {/*--------------------------------------------------*/
+  /*header*/
+  .home-apresetation button {
+    width: 157px;
+    height: 58px;  
+    font-size: 23px;  
+  }
+
+  .home-apresetation h1 {
+    font-size: 26px;
+  }
+
+  .home-apresetation h2 {    
+    font-size: 30px;
+  }
+  
+  /*te ajudamos*/
+  .container-losango {
+    left: 138px;
+  }
+
+  .losango img {
+    height: 470px;
+    width: 417px;
+  }
+
+  /*can help you*/
+  .we-help-you {
+    height: 60.75rem;    
+  }
+
+  .text-setup h1 {    
+    font-size: 1.6rem;    
+  }
+
+  .codju {
+    margin-left: 57px;
+  }
+
+  .btn-help {    
+    width: 185px;
+    height: 56px;    
+    font-size: 23px;
+    margin: 0 0;
+  }
+
+  /*----------footer------*/
+  .suport-title{
+    margin-right: 50px;
+  }
+
+  .contact-title {
+    margin-right: 33px;
+  }
+}
+
+@media (max-width: 500px) {/*--------------------------------------------------*/
+/*---te Ajudamos ------*/
+  .home-apresetation {
+    margin-top: 12rem;  
+  }
+
+  .header-nav-contact {
+    margin: 9px 68px;
+    gap: 64px;   
+  }
+
+  .text-header {
+    display: none;
+  }
+
+  .header-content i {
+    font-size: 2rem;    
+  }
+
+  .info-card button {  
+    top: -5px;
+    right: 19px;  
+    font-size: 44px;  
+  }
+}
+
+@media (max-width: 460px) {/*--------------------------------------------------*/
+
+  /*we help you */
+  .principal {
+    margin-left: 157px;
+  }
+
+  .codju {
+    margin-left: 10px;
+  }
+
+  .text-setup h1 {  
+    text-align: center;
+  }
+
+  .text-setup h2 {    
+    font-size: 0.9rem;    
+    text-align: center;
+  }
+
+  .details-read-more h2 {   
+    margin-left: 7px;    
+  }
+
+  .details-read-more i {    
+    margin-left: 13px;
+  }
+
+  .btn-help {
+    width: 161px;
+    height: 48px;
+    font-size: 20px;
+    margin: 16px 31px;
+  }
+
+  /* CArds */
+  .cards-help {    
+    height: 32rem;
+  }
+
+  .text-card {
+    margin-top: 12px;
+  }
+
+  .card {
+    width: 22.87rem;
+    height: 7rem;
+    margin: 35px 0 0 10px;
+  }
+
+  .card img {
+    width: 80px;
+    height: 80px;
+  }
+
+  /* OUr Service */
+  .our-services {
+    height: 66.5rem;
+  }
+
+  .card-services-1 {
+    margin: 10px;
+  }
+
+  .cards-serices {
+    grid-template-columns: repeat(1, 1fr);    
+  }
+
+  .sub-title {
+    margin-right: 0;
+  }
+
+  /* bar */ 
+  .pointBar {    
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);    
+  }
+
+  /* our team */
+  .our-team {    
+    height: 35rem;
+  }
+
+  .cards-team {    
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); 
+    gap: 16px 35px;  
+  }
+
+  .img-team {
+    height: 9rem;
+  } 
+  
+  /* footer */
+  .quick {    
+    text-align: center;
+  }
+
+  .quick-links {
+    margin-left: 8px;
+  }
+
+  .suport {
+    margin-left: 42px;
+  }
+
+  .suport-title {
+    margin-right: 21px;
+  }
+
+  .contact {
+    margin-left: 26px;
+  }
+
+  .contact-title {
+    margin-right: 8px;
+  }
+}
+
+@media (max-width: 400px) {/*--------------------------------------------------*/
+  /* menu bar nav */
+  .nav-bar-menu.active .hamburger {  
+    right: 69px;  
+  }
+
+  /* te ajudamos */
+  .container-losango {
+    left: 39px;
+  }
+
+  /* can help you */  
+  .details-read {    
+    grid-template-columns: repeat(1, 1fr);    
+    margin-left: 67px;
+  }
+
+  .operario-help {
+    width: 281px;
+    height: 286px;   
+  }
+
+  .text-setup h2 {
+    font-size: 0.8rem;
+    text-align: center;
+  }
+
+  /*choose */
+  .first-title {  
+    font-size: 1.6rem;    
+  }
+
+  /*convite */
+  .call-contact {
+    margin-left: 0px;
+    text-align: center;
+    margin-top: 23px;
+  }
+
+  /* foooter */
+  .info-footer {    
+    height: 40rem;   
+  }
+
+  .company-Name {    
+    flex-direction: column;    
+  }
+
+  .quick-links {
+    flex-direction: column;    
+  }
+
+  .quick {
+    text-align: center;
+    margin-bottom: 22px;
+  } 
+
+  .links-fast a {    
+    margin: 5px;
+  }
+
+  .suport { 
+    flex-direction: column;  
+    margin-left: 25px; 
+    gap: 18px; 
+  }
+
+  .suport-title {
+    margin-right: 0px;
+    margin-left: 95px;
+  }
+
+  .suport a {
+    margin-top: 6px;
+    margin-left: 32px;
+  }
+
+  .contact {
+    flex-direction: column;    
+    gap: 11px;
+  }
+
+  .contact-title {
+    margin-right: 0;
+    margin-left: 112px;
+  }
+
+  .contact a {
+    margin-top: 7px;
+    margin-left: 41px;
+  }
+}
+
+@media (max-width: 350px) {/*--------------------------------------------------*/
+  /*header */
+  .header-nav-contact {
+    margin: 9px 36px;
+    gap: 64px;
+  }
+
+  /*help you */
+  .text-setup h1 {
+    font-size: 1.5rem;
+  }
+
+  .text-setup h2 {
+    font-size: 0.7rem;
+    text-align: center;
+  }
+
+  /*cards */
+  .card {
+    width: 18.87rem;
+    height: 8rem;    
+  }
+
+  /*why choose */
+  .first-title {
+    font-size: 1.5rem;
+  }
+
+  .card-choose-1 {  
+    margin-left: 10px;
+  }
+
+  #title-services {  
+    font-size: 1.6rem; 
+  }
+
+  /* our team */
+  .team-text2 {
+    font-size: 1.4rem;
+    text-align: center;
+  }
+
+  /* footer*/
+  .info-footer {
+    height: 42rem;
+  }
+
+  .suport a {
+    margin-top: 6px;
+    margin-left: 17px;
+  }
+
+  .contact {
+    margin-left: -3px;
+  }
+}
+
+@media (max-width: 320px) {/*--------------------------------------------------*/
+  /* header */
+  .header-nav-contact {
+    margin: 9px 25px;
+    gap: 64px;
+  }
+  
+ /*ajuda nos */
+ .container-losango {
+  left: 13px;
+  top: 24px;
+  } 
+
+  .losango img {
+    height: 423px;
+    width: 372px;
+  }
+
+  /* we help you */
+  .text-setup h1 {
+    font-size: 1.3rem;
+  }
+
+  /*card */
+  .card {
+    width: 17.87rem;
+    height: 8rem;
+  }
+
+  #card1 {
+    margin-left: 3px;
+  }
+
+  /* our team */
+  .our-team {
+    height: 40rem;
+  }
+
+  /* footer */
+  .suport-title {
+    margin-right: 0px;
+    margin-left: 91px;
+  }
+
+  .contact-title {
+    margin-right: 0;
+    margin-left: 102px;
+  }
+
+  .contact a {
+    margin-top: 7px;
+    margin-left: 34px;
+  }
 }

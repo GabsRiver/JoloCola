@@ -237,8 +237,39 @@ revelar.reveal('.coment',
     opacity: 0.2,
   })
 
-  // --------------- hamburger ---------------------------------------------
-  const hamburger = document.querySelector('.hamburger');
-  const nav = document.querySelector(".nav-bar-menu");
+// --------------- hamburger ---------------------------------------------
+const hamburger = document.querySelector('.hamburger');
+const nav = document.querySelector(".nav-bar-menu");
 
-  hamburger.addEventListener("click", () => nav.classList.toggle("active"));
+hamburger.addEventListener("click", () => nav.classList.toggle("active"));
+
+
+//------------------cards ------------------------------------------------
+function toggleCard(tipo) {
+  // Fecha todos os cards primeiro
+  document.querySelectorAll('.info-card').forEach(card => {
+      card.style.display = 'none';
+  });
+  
+  // Abre o card específico
+  const card = document.getElementById(`${tipo}-card`);
+  if (card) {
+      card.style.display = 'block';
+  }
+}
+
+function hideCard(tipo) {
+  const card = document.getElementById(`${tipo}-card`);
+  if (card) {
+      card.style.display = 'none';
+  }
+}
+
+// Fechar ao clicar fora do card
+document.addEventListener('click', function(event) {
+  if (!event.target.closest('.header-content')) {
+      document.querySelectorAll('.info-card').forEach(card => {
+          card.style.display = 'none';
+      });
+  }
+});
